@@ -53,6 +53,10 @@ img {
     overflow-x: auto;
     scrollbar-width: none; 
 }
+.barra_de_rolagem:hover > :not(:hover){
+    opacity:  0.7;
+    transform: scale(0.9);
+}
 .main_avisos,
 .main_ocorrencia,
 .main_Historico,
@@ -60,7 +64,7 @@ img {
 .main_Evento,
 .main_Gerar_boletim,
 .main_matricula {
-    
+    ransition: 0.35s;
     width: 200px;
     height: 270px;
     position: relative;
