@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.main_home {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    width: 100vw;
+    height: 100vh;
+    background: #F6CF63;
+    display: flex;
+    flex-direction: column; /* Dispor elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.card_informacoes {
+    background: #8E76A9;
+    width: 606px;
+    height: 145px;
+    right: 500px;
+    margin-top: -200px;
+    position: relative; /* Para posicionamento relativo */
+    margin-bottom: 20px; /* Espaço entre o card e a barra de rolagem */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 50px; /* Espaço ao ícone */
+    border-radius: 40px;
+    opacity: 1; /* Visível */
+    box-sizing: border-box; /* Inclui padding e border no width e height */
+}
+
+.card_informacoes > h1 {
+    margin: 0; /* Remove margens padrão */
+    opacity: 1; /* Visível */
+}
+
+.User_icon {
+    position: absolute; /* Posicionamento absoluto dentro do .card_informacoes */
+    left: 20px; /* Espaço da borda esquerda */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+}
+
+.barra_de_rolagem {
+    display: flex;
+    width: 90%;
+    gap: 2rem;
+    overflow-x: auto;
+    scrollbar-width: none; 
+}
+.main_avisos,
+.main_ocorrencia,
+.main_Historico,
+.main_attDados,
+.main_Evento,
+.main_Gerar_boletim,
+.main_matricula {
+    
+    width: 200px;
+    height: 270px;
+    position: relative;
+    border-radius: 45px;
+    max-width: 100%;
+    overflow: hidden;
+    background: #8E76A9;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+.main_ocorrencia img,
+.main_Historico img,
+.main_attDados img,
+.main_Evento img,
+.main_Gerar_boletim img,
+.main_matricula img {
+    margin-bottom: 10px; /* Espaço entre o ícone e o título */
+}
+.main_avisos>h1,
+.main_ocorrencia>h1,
+.main_Historico>h1,
+.main_attDados>h1,
+.main_Evento>h1,
+.main_Gerar_boletim>h1,
+.main_matricula>h1 {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 16px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.icon_attDados{
+    width: 150px;
+    height: auto;
+}
+.Icon_ocorrencia,
+.Evento_icon{
+    height: 100px;
+    height: auto;
+}
+.Gerar_boletima_icon{
+    width: 30px;
+    height: auto;
+
+}
+.icon_matricula {
+    width: 50px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção */
+}
+.icon_HistoricoEscolar {
+    width: 100px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção */
+}
+.aviso,
+.ocorrencia,
+.Historico,
+.AttDados,
+.boletim,
+.evento,
+.matricula {
+    text-decoration: none;
+    color: inherit; 
+}

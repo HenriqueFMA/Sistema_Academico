@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #F6CF63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left-login>h1{
+    color: #8E76A9;
+
+}
+.left-image{
+    width: 35vw;
+}
+.rigth-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #8E76A9;
+    border-radius: 55px;
+    box-shadow: 0 10px 40px #00000056;
+}
+.card-login>h1{
+    font-weight: 800;
+    margin: 0;
+
+}
+.text-filder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+.text-filder>input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #BED3E0;
+    color: #373052;
+    font-size: 12pt;
+    box-shadow:  0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.text-filder>label{
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #F5ECEC;
+
+
+}
+.btn-login{
+    width: 120px;
+    height: 58px;
+    top: 770px;
+    left: 1148px;
+    gap: 0px;
+    border-radius: 55px;
+    opacity: 0px;
+    background: #373052;
+    font-size: 20px;
+    font-weight: 10;
+    line-height: 60.51px;
+    text-align: center;
+    text-transform: uppercase;  
+    color: #F5ECEC;
+    cursor: pointer;
+
+}
+.esqueceu_senha {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #373052;
+    text-decoration: none;
+    cursor: pointer;
+}
