@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6CF63;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.main_Pesquisa {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: #F6CF63;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_informacoes {
+    background: #8E76A9;
+    width: 606px;
+    height: 145px;
+    left: 0;
+    /* Alinha o card à borda esquerda */
+    margin-top: -703px;
+    position: absolute;
+    /* Para posicionamento absoluto */
+    margin-bottom: 20px;
+    /* Espaço entre o card e a barra de rolagem */
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente */
+    padding-left: 50px;
+    /* Espaço ao ícone */
+    border-radius: 0 40px 40px 0;
+    opacity: 1;
+    /* Visível */
+    box-sizing: border-box;
+    /* Inclui padding e border no width e height */
+}
+
+.card_informacoes>h2,
+.card_informacoes>h3 {
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.card_informacoes>h1 {
+    margin: 0;
+    /* Remove margens padrão */
+    opacity: 1;
+    /* Visível */
+
+}
+
+.h3,
+h3,
+.h2,
+h2,
+.h1,
+h1 {
+    user-select: none;
+}
+
+
+.User_icon {
+    position: absolute;
+    /* Posicionamento absoluto dentro do .card_informacoes */
+    left: 20px;
+    /* Espaço da borda esquerda */
+    width: 50px;
+    /* Largura do ícone */
+    height: 50px;
+    /* Altura do ícone */
+}
+
+.pesquisa {
+    width: 1104px;
+    height: 108px;
+    flex-shrink: 0;
+}
+
+.barra_de_pesquisa {
+
+    box-shadow: #00000006;
+    border: none;
+    position: relative;
+    width: 1104px;
+    height: 108px;
+}
+
+.barra_de_pesquisa>input {
+    width: 100%;
+    height: 100%;
+    background-color: #BED3E0;
+    padding-right: 108px;
+    box-sizing: border-box;
+}
+
+.btn_pesquisa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.btn_pesquisa img {
+    height: 50%;
+    width: auto;
+}
+
+.campoPesquisa {
+    outline: #6a757c;
+    border: none;
+    border-radius: 55px;
+    user-select: none;
+    font-family: inherit;
+    font-size: inherit;
+
+    padding: 20px 108px 20px 20px;
+}
+
+.Home_btn {
+    position: absolute;
+    top: 10px; /* Distância do topo da página */
+    right: 10px; /* Distância da borda direita da página */
+    /* Adicione outros estilos conforme necessário */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.suggestions-list {
+    width: 85%;
+    position: absolute;
+    top: 100%;
+    left: 6.4% ;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    border-radius: 0  0 55px 55px ;
+     
+}
+.suggestions-list::-webkit-scrollbar{
+    height: 5%;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}

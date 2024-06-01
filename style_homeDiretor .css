@@ -7,7 +7,7 @@ img {
     -webkit-user-drag: none;
 }
 
-.main_home {
+.main_home{
     text-align: center; /* Centraliza o texto horizontalmente */
     width: 100vw;
     height: 100vh;
@@ -22,21 +22,33 @@ img {
     background: #8E76A9;
     width: 606px;
     height: 145px;
-    right: 500px;
-    margin-top: -200px;
-    position: relative; /* Para posicionamento relativo */
+    left: 0; /* Alinha o card à borda esquerda */
+    margin-top: -703px;
+    position: absolute; /* Para posicionamento absoluto */
     margin-bottom: 20px; /* Espaço entre o card e a barra de rolagem */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     padding-left: 50px; /* Espaço ao ícone */
-    border-radius: 40px;
+    border-radius: 0 40px  40px 0;
     opacity: 1; /* Visível */
     box-sizing: border-box; /* Inclui padding e border no width e height */
 }
 
-.card_informacoes > h1 {
+.card_informacoes>h2,
+.card_informacoes>h3 {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.card_informacoes>h1 {
     margin: 0; /* Remove margens padrão */
     opacity: 1; /* Visível */
+}
+
+.h3, h3,
+.h2, h2,
+.h1, h1 {
+    user-select: none;
 }
 
 .User_icon {
@@ -51,12 +63,22 @@ img {
     width: 90%;
     gap: 2rem;
     overflow-x: auto;
-    scrollbar-width: none; 
+    scrollbar-width: none;
+    user-select: none;
+    cursor: grab;
 }
-.barra_de_rolagem:hover > :not(:hover){
-    opacity:  0.7;
+
+.barra_de_rolagem:active {
+    cursor: grabbing;
+}
+
+.barra_de_rolagem:hover>:not(:hover) {
+    opacity: 0.7;
     transform: scale(0.9);
 }
+.main_desempenho,
+.main_AddProfessor,
+.main_AttDados,
 .main_avisos,
 .main_ocorrencia,
 .main_Historico,
@@ -64,7 +86,7 @@ img {
 .main_Evento,
 .main_Gerar_boletim,
 .main_matricula {
-    ransition: 0.35s;
+    transition: 0.35s;
     width: 200px;
     height: 270px;
     position: relative;
@@ -77,7 +99,11 @@ img {
     flex-direction: column; /* Alinha o conteúdo verticalmente */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
+    user-select: none;
 }
+.main_desempenho img,
+.main_AddProfessor img,
+.main_AttDados img,
 .main_ocorrencia img,
 .main_Historico img,
 .main_attDados img,
@@ -86,40 +112,55 @@ img {
 .main_matricula img {
     margin-bottom: 10px; /* Espaço entre o ícone e o título */
 }
+.main_desempenho>h1,
+.main_AddProfessor>h1,
+.main_AttDados>h1,
 .main_avisos>h1,
 .main_ocorrencia>h1,
 .main_Historico>h1,
-.main_attDados>h1,
 .main_Evento>h1,
 .main_Gerar_boletim>h1,
 .main_matricula>h1 {
     margin: 0; /* Remove a margem padrão */
-    font-size: 16px; /* Tamanho da fonte do título */
+    font-size: 25px; /* Tamanho da fonte do título */
     text-align: center; /* Centraliza o texto */
+    user-select: none;
 }
 
-.icon_attDados{
-    width: 150px;
-    height: auto;
-}
-.Icon_ocorrencia,
-.Evento_icon{
-    height: 100px;
-    height: auto;
-}
-.Gerar_boletima_icon{
+
+
+
+
+.Gerar_boletima_icon {
     width: 30px;
     height: auto;
-
 }
+
 .icon_matricula {
     width: 50px; /* Defina a largura desejada */
     height: auto; /* Mantém a proporção */
 }
-.icon_HistoricoEscolar {
+.icon_desempenho,
+.Icon_ocorrencia,
+.Evento_icon,
+.icon_HistoricoEscolar,
+.icon_matricula {
     width: 100px; /* Defina a largura desejada */
     height: auto; /* Mantém a proporção */
 }
+.icon_attDados,
+.Icon_AttDados {
+    width: 150px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção */
+}
+
+.Icon_AddProfessor {
+    width: 100px;
+    height: auto;
+}
+.desempenho,
+.AddProfessor,
+.AttDados,
 .aviso,
 .ocorrencia,
 .Historico,
@@ -127,6 +168,22 @@ img {
 .boletim,
 .evento,
 .matricula {
+    font-size: medium;
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
+    user-select: none;
+    -webkit-user-drag: none; /* Safari e Chrome */
+    -khtml-user-drag: none; /* Konqueror */
+    -moz-user-drag: none; /* Firefox */
+    -o-user-drag: none; /* Opera */
+}
+
+.LogOut_btn {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
