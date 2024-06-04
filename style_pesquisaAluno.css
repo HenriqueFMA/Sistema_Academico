@@ -23,64 +23,6 @@ img {
     align-items: center;
 }
 
-.card_informacoes {
-    background: #8E76A9;
-    width: 606px;
-    height: 145px;
-    left: 0;
-    /* Alinha o card à borda esquerda */
-    margin-top: -703px;
-    position: absolute;
-    /* Para posicionamento absoluto */
-    margin-bottom: 20px;
-    /* Espaço entre o card e a barra de rolagem */
-    display: flex;
-    align-items: center;
-    /* Centraliza verticalmente */
-    padding-left: 50px;
-    /* Espaço ao ícone */
-    border-radius: 0 40px 40px 0;
-    opacity: 1;
-    /* Visível */
-    box-sizing: border-box;
-    /* Inclui padding e border no width e height */
-}
-
-.card_informacoes>h2,
-.card_informacoes>h3 {
-    user-select: none;
-    -webkit-user-drag: none;
-
-}
-
-.card_informacoes>h1 {
-    margin: 0;
-    /* Remove margens padrão */
-    opacity: 1;
-    /* Visível */
-
-}
-
-.h3,
-h3,
-.h2,
-h2,
-.h1,
-h1 {
-    user-select: none;
-}
-
-
-.User_icon {
-    position: absolute;
-    /* Posicionamento absoluto dentro do .card_informacoes */
-    left: 20px;
-    /* Espaço da borda esquerda */
-    width: 50px;
-    /* Largura do ícone */
-    height: 50px;
-    /* Altura do ícone */
-}
 
 .pesquisa {
     width: 1104px;
@@ -135,16 +77,7 @@ h1 {
     padding: 20px 108px 20px 20px;
 }
 
-.Home_btn {
-    position: absolute;
-    top: 10px; /* Distância do topo da página */
-    right: 10px; /* Distância da borda direita da página */
-    /* Adicione outros estilos conforme necessário */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .suggestions-list {
     width: 85%;
     position: absolute;
