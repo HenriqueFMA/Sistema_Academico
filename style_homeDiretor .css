@@ -39,25 +39,6 @@ img {
     user-select: none;
     -webkit-user-drag: none;
 }
-
-.card_informacoes>h1 {
-    margin: 0; /* Remove margens padrão */
-    opacity: 1; /* Visível */
-}
-
-.h3, h3,
-.h2, h2,
-.h1, h1 {
-    user-select: none;
-}
-
-.User_icon {
-    position: absolute; /* Posicionamento absoluto dentro do .card_informacoes */
-    left: 20px; /* Espaço da borda esquerda */
-    width: 50px; /* Largura do ícone */
-    height: 50px; /* Altura do ícone */
-}
-
 .barra_de_rolagem {
     display: flex;
     width: 90%;
