@@ -1,11 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #F6CF63; /* Cor de fundo */
+    background: #F6CF63;
     overflow-x: hidden;
     justify-content: center;
     align-items: flex-start;
-  
 }
 
 img {
@@ -14,30 +13,28 @@ img {
 }
 
 .main_Matricula {
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center;
     width: 100vw;
     height: 100vh;
     background: #F6CF63;
     display: flex;
-    flex-direction: column; /* Dispor elementos verticalmente */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 300px; /* Ajusta o espaço entre o formulário e o topo */
 }
 
-
-
 .formulario {
-    max-width: 90vw;
     background-color: white;
-    padding: 20px;  
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90vw; /* Ajusta a largura máxima para 90% da viewport */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 300PX;
     margin-left: auto;
     margin-right: auto;
-    Max-width: 90vw;
-    width: 100%;
-    margin-top: 1600PX; /* Adiciona espaço entre o formulário e o topo */
-    box-sizing: border-box;
 }
 
 .section {
@@ -75,7 +72,6 @@ img {
     width: calc(100% - 20px);
 }
 
-
 .finalizar-btn {
     width: 100%;
     padding: 10px;
@@ -94,12 +90,12 @@ img {
 @media (min-width: 768px) {
     .form-group input[type="text"],
     .form-group input[type="date"] {
-        width: calc(50% - 10px); /* Ajusta os inputs para 50% da largura */
+        width: calc(50% - 10px);
     }
 
     .form-group input[type="text"]:nth-child(odd),
     .form-group input[type="date"]:nth-child(odd) {
-        margin-right: 20px; /* Espaço entre os inputs */
+        margin-right: 20px;
     }
 
     .form-group.photo {
@@ -111,6 +107,7 @@ img {
         margin-bottom: 20px;
     }
 }
+
 .photo-placeholder {
     position: relative;
     display: flex;
@@ -140,4 +137,3 @@ img {
 #foto_do_aluno {
     display: none;
 }
-

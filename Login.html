@@ -8,33 +8,36 @@
 </head>
 <body>
     <div class="main-login">
-        <div class="left-login ">
+        <div class="left-login">
             <h1>Faça Login<br>E entre para nosso grupo</h1>
-            <img src="college-class-animate.svg"  class="left-image" alt="aula_capa">
+            <img src="college-class-animate.svg" class="left-image" alt="aula_capa">
         </div>
         <div class="right-login">
             <div class="card-login">
-                <form action="" name="Login">
+                <form id="login-form" name="Login">
                     <h1>Login</h1>
                     <div class="text-filder">
                         <label for="Matrícula/CPF">Matrícula/CPF</label>
-                        <input type="text" name="Matrícula/CPF" placeholder="Matrícula/CPF">
+                        <input type="text" id="cpf" name="Matrícula/CPF" placeholder="Matrícula/CPF">
                     </div>
                     <div class="text-filder">
                         <label for="Senha">Senha</label>
-                        <input type="password" name="Senha" placeholder="Senha">
-
+                        <input type="password" id="senha" name="Senha" placeholder="Senha">
                     </div>
-                    <a href="home.html">
-                        <button class="btn-login">Login</button>
-                      </a> 
-                    </form>
-                    
-                    <a href="esqueceu_senha.html" class="esqueceu_senha"> Esqueceu a senha?</a>
-
+                    <div class="text-filder">
+                        <label for="role">Tipo de login</label>
+                        <select id="role">
+                            <option value="professor">Professor</option>
+                            <option value="diretor">Diretor</option>
+                            <option value="secretario">Secretário</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-login" >Login</button>
+                </form>
+                <a href="esqueceu_senha.html" class="esqueceu_senha">Esqueceu a senha?</a>
             </div>
         </div>
-    </div>
-    
+<script src="login.js"></script>
+<script src="TipoDeLogin.js"></script>
 </body>
 </html>
