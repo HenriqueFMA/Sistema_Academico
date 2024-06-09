@@ -1,0 +1,97 @@
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #F6CF63;
+            display: flex;
+            flex-direction: column;
+            height: 150vh;
+            overflow-x: hidden;
+            justify-content: center;
+        }
+        
+    
+        
+        
+        
+        main {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 140px;
+            background: #F7F2F2;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            height: 100vh;
+           position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            width: 60%;
+            display: flex;
+            margin-top: 200px;
+            flex-direction: column;
+        }
+        
+        .form-group {
+            
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="date"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1em;
+            background: #D4E0E5;
+            margin-bottom: 10px; /* Adiciona uma margem de 10 pixels abaixo dos inputs */
+        }
+        
+        
+        button[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #E4D00A;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        button[type="submit"]:hover {
+            background: #c1b009;
+        }
+        
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #E4D00A;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background: #c1b009;
+        }
+        

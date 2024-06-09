@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style_home.css">
     <link rel="stylesheet" href="Header.css">
-    <title>Document</title>.css
+    <title>Document</title>
 </head>
 
 <body>
@@ -25,12 +25,13 @@
             </div>
         </div>
         <div class="Home_btn">
-            <a href="home.html" class="Home">
-                <img src="imagens/Icon_Home.png" alt="Home">
-
+            <a href="Login.html" class="Home">
+                <img src="imagens/logOut_Icon.png" alt="Home">
+    
             </a>
+    
         </div>
-        <div class="barra_de_rolagem">
+        <div class="barra_de_rolagem" id="barra_de_rolagem">
 
             <a href="matricula.html" class="matricula">
                 <div class="main_matricula">
@@ -40,7 +41,7 @@
 
                 </div>
             </a>
-            <a href="GerarBoletim.html" class="boletim">
+            <a href="PesquisaAluno.html" class="boletim">
                 <div class="main_Gerar_boletim">
                     <img src="imagens/icons_barraderolagem/icon_Gerar_boletim.png" class="Gerar_boletim_icon"
                         alt="Gerar_boletim_icon">
@@ -108,7 +109,7 @@
 
         </div>
     </header >
-    <header id="secretario-header">
+    <header id="secretario-header" id="barra_de_rolagem">
         <div class="card_informacoes">
             <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
             <div class="text_container">
@@ -137,7 +138,7 @@
 
                 </div>
             </a>
-            <a href="GerarBoletim.html" class="boletim">
+            <a href="PesquisaAluno.html" class="boletim">
                 <div class="main_Gerar_boletim">
                     <img src="imagens/icons_barraderolagem/icon_Gerar_boletim.png" class="Gerar_boletim_icon"
                         alt="Gerar_boletim_icon">
@@ -191,10 +192,82 @@
 
         </div>
     </header>
+
+    <header id="professor-header" id="barra_de_rolagem">
+        <div class="card_informacoes">
+            <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
+            <div class="text_container">
+                <h1 class="nome_funcionario">Nome funcionario</h1>
+                <h2 class="matricula">Matrícula:xxxxxxxxx</h2>
+                <h3>CPF:xxx.xxx.xxx-xx</h3>
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        <div class="Home_btn">
+            <a href="home.html" class="Home">
+                <img src="imagens/Icon_Home.png" alt="Home">
+    
+            </a>
+    
+        </div>
+    
+            <div class="barra_de_rolagem">
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>1ª ano B</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma1">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma2">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma3">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma4">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma5">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma6">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+            </div>
+            
+    
+    
+    </header>
+
     <main class="main_home">
        
-
-
+        <h1>Avisos</h1>
+        <img src="imagens/icons_barraderolagem/" alt="">
+        <div id="alertasContainer"></div>
+        
         
         <div class="calendario">
 
@@ -205,6 +278,7 @@
 
 
 </body>
+ <script src="AvisoNaHome.js"></script>
 <script src="VerificaçaoDeAscesso.js"></script>
-
+<script src="SelectBarraRolagem.js"></script>
 </html>

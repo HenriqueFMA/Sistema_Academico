@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6CF63;
+
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff8f4; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #cde6f7; /* Cor dos inputs */
+}
+input[type="text"], input[type="date"], input[type="time"], select {
+    display: inline-block;
+    width: calc(50% - 10px); /* Ajusta para dois campos por linha */
+}
+input[type="text"]:nth-child(odd), input[type="date"], input[type="time"], select {
+    margin-right: 20px; /* Espaço entre os dois campos */
+}
+textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    resize: none;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1c40f;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e1b40e;
+}
+.btn-style {
+    background-color: #4a4a8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-style:hover {
+    opacity: 0.9;
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    cursor: pointer;
+    color: #4a4a8d;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #4a4a8d;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.file-label:hover {
+    background-color: #f0f0f0;
+}
+
+.link-label {
+    display: flex;
+    align-items: center;
+}
+
+.link-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.link-label input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4a4a8d;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.link-label button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a4a8d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.link-label button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background: #F6CF63;
+}
+.matricula-do-aluno {
+    margin-top: 90px;
+    margin-left: 400px;
+    width: 698px;
+    position: relative;
+    font-size: 38px;
+    display: inline-block;
+    font-family: Inter;
+    color: #000;
+    text-align: center;
+}
+.check-icon-check-mark-compute {
+    margin-top: 100px;
+    margin-left: 600px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.finalizar-btn {
+    margin-top: 59px;
+    margin-left: 550px;
+    width: 30%;
+    padding: 10px;
+    background-color: #4a4a8d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.finalizar-btn:hover {
+    background-color: #3b3b6d;
+}

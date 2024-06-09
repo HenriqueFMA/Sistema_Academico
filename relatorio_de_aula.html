@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="style_Registro_de_Aula.css">
+    <title>Registro de Aula</title>
+</head>
+<body>
+    <header id="professor-header" id="barra_de_rolagem">
+        <div class="card_informacoes">
+            <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
+            <div class="text_container">
+                <h1 class="nome_funcionario">Nome funcionario</h1>
+                <h2 class="matricula">Matrícula:xxxxxxxxx</h2>
+                <h3>CPF:xxx.xxx.xxx-xx</h3>
+            </div>
+            <div>
+    
+            </div>
+        </div>
+        <div class="Home_btn">
+            <a href="home.html" class="Home">
+                <img src="imagens/Icon_Home.png" alt="Home">
+    
+            </a>
+    
+        </div>
+    
+            <div class="barra_de_rolagem">
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>1ª ano B</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma1">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma2">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma3">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma4">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma5">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+                <a href="Turma.html" class="turma">
+                    <div class="main_turma6">
+                        <img src="imagens/icons_barraderolagem/icon_turma.png" class="turma_icon" alt="turma_icon">
+                        <h1>nome da turma</h1>
+                    </div>
+                </a>
+            </div>
+            
+           
+    
+    </header>
+
+    <main>
+        <h1>Registro de Aula</h1>
+        <form>
+            <!-- Informações da Aula -->
+            <fieldset>
+                <legend>Informações da Aula</legend>
+                <label for="dataAula">Data da Aula:</label>
+                <input type="date" id="dataAula" name="dataAula" required>
+    
+                <label for="horaInicio">Horário de Início:</label>
+                <input type="time" id="horaInicio" name="horaInicio" required>
+    
+                <label for="horaTermino">Horário de Término:</label>
+                <input type="time" id="horaTermino" name="horaTermino" required>
+    
+                <label for="localAula">Local da Aula:</label>
+                <input type="text" id="localAula" name="localAula" required>
+    
+                <label for="nomeProfessor">Nome do Professor:</label>
+                <input type="text" id="nomeProfessor" name="nomeProfessor" required>
+    
+                <label for="disciplina">Disciplina:</label>
+                <input type="text" id="disciplina" name="disciplina" required>
+            </fieldset>
+    
+            <!-- Conteúdo da Aula -->
+            <fieldset>
+                <legend>Conteúdo da Aula</legend>
+                <label for="topicos">Tópicos Abordados:</label>
+                <textarea id="topicos" name="topicos" required></textarea>
+    
+                <label for="materiais">Materiais Utilizados:</label>
+                <textarea id="materiais" name="materiais" required></textarea>
+            </fieldset>
+            
+            <div class="attachments">
+                <label for="file-upload" class="file-label">
+                    <span class="file-icon">📎</span>
+                    <input type="file" id="file-upload" name="file-upload" multiple>
+                </label>
+                <label for="link-upload" class="link-label">
+                    <span class="link-icon">🔗</span>
+                    <input type="text" id="link-upload" name="link-upload" placeholder="Cole o link aqui">
+                    <button id="add-link" type="button">Adicionar Link</button>
+                </label>
+            </div>
+            <div class="uploaded-files" id="uploaded-files"></div>
+            
+            <a href="Confirmacao_Aula.html">
+                <button type="submit" ondblclick="window.location.href = 'Confirmacao_Aula.html'" class="btn-style">Salvar Registro</button>            
+            </a>
+            
+           
+        </form>
+
+    </main>
+</body>
+<script src="preVisualizaDescricao.js"></script>
+</html>

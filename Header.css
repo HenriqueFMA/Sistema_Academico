@@ -36,8 +36,13 @@ body{
     user-select: none;
     cursor: grab;
     margin-top: 300px;
+    padding: 20px; /* Ajuste conforme necessário */
+    box-sizing: border-box; /* Para incluir o padding no tamanho total */
 }
 
+.barra_de_rolagem::-webkit-scrollbar {
+    display: none; 
+}
 .barra_de_rolagem:active {
     cursor: grabbing;
 }
@@ -46,6 +51,12 @@ body{
     opacity: 0.7;
     transform: scale(0.9);
 }
+.main_turma1,
+.main_turma2,
+.main_turma3,
+.main_turma4,
+.main_turma5,
+.main_turma6,
 .main_desempenho,
 .main_AddProfessor,
 .main_AttDados,
@@ -53,6 +64,7 @@ body{
 .main_ocorrencia,
 .main_Historico,
 .main_attDados,
+.main_turma,
 .main_Evento,
 .main_Gerar_boletim,
 .main_matricula {
@@ -71,6 +83,13 @@ body{
     align-items: center; /* Centraliza o conteúdo verticalmente */
     user-select: none;
 }
+.main_turma1 img,
+.main_turma2 img,
+.main_turma3 img,
+.main_turma4 img,
+.main_turma5 img,
+.main_turma6 img,
+.main_turma img,
 .main_desempenho img,
 .main_AddProfessor img,
 .main_AttDados img,
@@ -82,6 +101,13 @@ body{
 .main_matricula img {
     margin-bottom: 10px; /* Espaço entre o ícone e o título */
 }
+.main_turma1>h1,
+.main_turma2>h1,
+.main_turma3>h1,
+.main_turma4>h1,
+.main_turma5>h1,
+.main_turma6>h1,
+.main_turma >h1,
 .main_desempenho>h1,
 .main_AddProfessor>h1,
 .main_AttDados>h1,
@@ -95,6 +121,10 @@ body{
     font-size: 25px; /* Tamanho da fonte do título */
     text-align: center; /* Centraliza o texto */
     user-select: none;
+}
+.turma_icon{
+    width: 100px;
+    height: auto;
 }
 .Gerar_boletima_icon {
     width: 30px;
@@ -121,6 +151,7 @@ body{
     width: 100px;
     height: auto;
 }
+.turma,
 .desempenho,
 .AddProfessor,
 .AttDados,
@@ -163,4 +194,11 @@ body{
 .Home_btn .Home img {
     width: 100px; /* Ajuste do tamanho da imagem */
     height: auto; /* Manter proporção da imagem */
+}
+
+.selected {
+    background: #4915A3;
+    box-shadow: 20px #4915A3ba(0, 0, 0, 0.5); /* Exemplo de sombra */
+    transform: scale(1.05); /* Leve aumento de escala */
+    transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
 }
