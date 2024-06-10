@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="style_ADDProf.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,8 +23,9 @@
         <div class="Home_btn">
             <a href="home.html" class="Home">
                 <img src="imagens/Icon_Home.png" alt="Home">
-
+    
             </a>
+    
         </div>
         <div class="barra_de_rolagem" id="barra_de_rolagem">
 
@@ -87,7 +89,7 @@
                 <div class="main_AddProfessor">
                     <img src="imagens/icons_barraderolagem/Icon_CadastroProfessor.png" class="Icon_AddProfessor"
                         alt="Icon_AddProfessor">
-                    <h1>Cadastre Professo(a)</h1>
+                    <h1>Cadastre professor</h1>
 
                 </div>
             </a>
@@ -95,7 +97,7 @@
                 <div class="main_desempenho">
                     <img src="imagens/icons_barraderolagem/icon_desempenho.png" class="icon_desempenho"
                         alt="icon_desempenho">
-                    <h1>Cadastre Professo(a)</h1>
+                    <h1>Desempenho</h1>
 
                 </div>
             </a>
@@ -111,9 +113,7 @@
                 <h2 class="matricula">Matrícula:xxxxxxxxx</h2>
                 <h3>CPF:xxx.xxx.xxx-xx</h3>
             </div>
-            <div>
-
-            </div>
+         
         </div>
         <div class="Home_btn">
             <a href="" class="Home">
@@ -187,9 +187,98 @@
         </div>
     </header>
     <main>
-        
+        <div class="formulario">
+            <form action="" name="Matrícula">
+            <div class="section">
+               
+                <h2>Dados do professor</h2>
+                <div class="form-group">
+                    <label for="nome-professor">Nome do professor</label>
+                    <input type="text" id="nome-professor" placeholder="Nome do professor">
+                </div>
+                <div class="form-group">
+                    <label for="cpf-professor">CPF do professor</label>
+                    <input type="text" id="cpf-professor" placeholder="CPF do professor">
+                </div>
+                <div class="form-group">
+                    <label for="data-nascimento-professor">Data de nascimento do professor</label>
+                    <input type="date" id="data-nascimento-professor">
+                </div>
+                <div class="form-group">
+                    <label for="rg-professor">RG do professor</label>
+                    <input type="text" id="rg-professor" placeholder="RG do professor">
+                </div>
+                <div class="form-group">
+                    <label for="serie">Série</label>
+                    <input type="text" id="serie" placeholder="Série">
+                </div>
+                <div class="form-group">
+                    <label for="turno">Turno de preferência</label>
+                    <input type="text" id="turno" placeholder="Turno de preferência">
+                </div>
+                <div class="form-group">
+                    <label for="nis-professor">
+                        <N>
+                            <IN></IN>NIS
+                    </label>
+                    <input type="text" id="nis-professor" placeholder="NIS do professor">
+                </div>
+                <div class="form-group photo">
+                    <div class="photo-placeholder" id="photo-placeholder">
+                        <input type="file" accept="image/png, image/jpeg" id="foto_do_professor">
+                        <img id="preview-img" alt="Adicione foto do professor">
+                        <p id="placeholder-text">Adicione foto do professor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Dados dos pais</h2>
+                <div class="form-group">
+                    <label for="nome-mae">Nome da mãe</label>
+                    <input type="text" id="nome-mae" placeholder="Nome da mãe">
+                </div>
+             
+              
+                <div class="form-group">
+                    <label for="data-nascimento-mae">Data de nascimento da mãe</label>
+                    <input type="date" id="data-nascimento-mae">
+                </div>
+                <div class="form-group">
+                    <label for="nome-pai">Nome do pai</label>
+                    <input type="text" id="nome-pai" placeholder="Nome do pai">
+                </div>
+           
+              
+              
+            </div>
+
+            <div class="section">
+                <h2>Endereço</h2>
+                <div class="form-group">
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" placeholder="Rua">
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" placeholder="Bairro">
+                </div>
+                <div class="form-group">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" placeholder="Complemento">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button class="finalizar-btn">Finalizar</button>
+            </div>
+
+        </form>
+        </div>
     </main>
+    <Script src="preVizualiazaçaoFotoProf.js"></Script>
 </body>
 <script src="VerificaçaoDeAscesso.js"></script>
+
 <script src="SelectBarraRolagem.js"></script>
 </html>

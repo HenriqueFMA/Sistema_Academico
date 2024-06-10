@@ -2,6 +2,7 @@ document.getElementById('photo-placeholder').addEventListener('click', function(
     document.getElementById('foto_do_aluno').click();
 });
 
+
 document.getElementById('foto_do_aluno').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
