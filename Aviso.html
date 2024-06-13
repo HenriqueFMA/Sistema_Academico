@@ -105,7 +105,7 @@
 
         </div>
     </header >
-    <header id="secretario-header" id="barra_de_rolagem">
+    <header id="secretario-header">
         <div class="card_informacoes">
             <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
             <div class="text_container">
@@ -113,89 +113,69 @@
                 <h2 class="matricula">Matrícula:xxxxxxxxx</h2>
                 <h3>CPF:xxx.xxx.xxx-xx</h3>
             </div>
-            <div>
-
-            </div>
         </div>
         <div class="Home_btn">
             <a href="" class="Home">
                 <img src="imagens/Icon_Home.png" alt="Home">
-
             </a>
-
         </div>
-        <div class="barra_de_rolagem">
-
+        <div class="barra_de_rolagem"> <!-- Aqui é uma classe, não um ID -->
             <a href="matricula.html" class="matricula">
                 <div class="main_matricula">
-                    <img src="imagens/icons_barraderolagem/matricula_icon.png" class="matricula_icon"
-                        alt="matricula_icon">
+                    <img src="imagens/icons_barraderolagem/matricula_icon.png" class="matricula_icon" alt="matricula_icon">
                     <h1>Matrícula</h1>
-
                 </div>
             </a>
             <a href="PesquisaAluno.html" class="boletim">
                 <div class="main_Gerar_boletim">
-                    <img src="imagens/icons_barraderolagem/icon_Gerar_boletim.png" class="Gerar_boletim_icon"
-                        alt="Gerar_boletim_icon">
+                    <img src="imagens/icons_barraderolagem/icon_Gerar_boletim.png" class="Gerar_boletim_icon" alt="Gerar_boletim_icon">
                     <h1>Gerar boletim</h1>
-
                 </div>
-
             </a>
             <a href="Evento.html" class="evento">
                 <div class="main_Evento">
-                    <img src="imagens/icons_barraderolagem/icon_AdicionarEvento.png" class="Evento_icon"
-                        alt="Evento_icon">
+                    <img src="imagens/icons_barraderolagem/icon_AdicionarEvento.png" class="Evento_icon" alt="Evento_icon">
                     <h1>Gerar evento</h1>
-
                 </div>
             </a>
             <a href="HistoricoEcolar.html" class="Historico">
                 <div class="main_Historico">
-                    <img src="imagens/icons_barraderolagem/icon_HistoricoEscolar.png" class="icon_HistoricoEscolar"
-                        alt="icon_HistoricoEscolar">
-                    <h1>Gerar Hitórico Escolar</h1>
-
+                    <img src="imagens/icons_barraderolagem/icon_HistoricoEscolar.png" class="icon_HistoricoEscolar" alt="icon_HistoricoEscolar">
+                    <h1>Gerar Histórico Escolar</h1>
                 </div>
             </a>
-
             <a href="Ocorrencia.html" class="ocorrencia">
                 <div class="main_ocorrencia">
-                    <img src="imagens/icons_barraderolagem/Icon_ocorrencia.png" class="Icon_ocorrencia"
-                        alt="Icon_ocorrencia">
+                    <img src="imagens/icons_barraderolagem/Icon_ocorrencia.png" class="Icon_ocorrencia" alt="Icon_ocorrencia">
                     <h1>Abrir Ocorrência</h1>
-
                 </div>
             </a>
             <a href="Aviso.html" class="aviso">
                 <div class="main_avisos">
-                    <img src="imagens/icons_barraderolagem/Icon_evento.png" class="Icon_aviso"
-                        alt="Icon_aviso">
+                    <img src="imagens/icons_barraderolagem/Icon_evento.png" class="Icon_aviso" alt="Icon_aviso">
                     <h1>avisos</h1>
-
                 </div>
             </a>
             <a href="AtualizarDados.html" class="AttDados">
                 <div class="main_AttDados">
-                    <img src="imagens/icons_barraderolagem/icon_attDados.png" class="Icon_AsttDado"
-                        alt="Icon_AsttDado">
+                    <img src="imagens/icons_barraderolagem/icon_attDados.png" class="Icon_AsttDado" alt="Icon_AsttDado">
                     <h1>Atualizar dados</h1>
-
                 </div>
             </a>
-            <script src="Scroll.js"></script>
-
         </div>
     </header>
+    
 
 
 
    <main>
     <h1>Adicione aviso</h1>
     <form id="alertaForm">
+        <label for="">Título</label>
         <input type="text" id="titulo" placeholder="Título" required>
+        <label for="">Descrição</label>
         <input type="text" id="descricao" placeholder="Descrição" required></input>
+        <label for=""> Data de vencimento</label>
         <input type="date" id="vencimento" required>
         <button type="submit">Adicionar Alerta</button>
     </form>

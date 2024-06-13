@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="style_notas.css">
     <title>Document</title>
 </head>
 <body>
@@ -104,7 +105,7 @@
 
         </div>
     </header >
-    <header id="secretario-header" id="barra_de_rolagem">
+    <header id="secretario-header" >
         <div class="card_informacoes">
             <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
             <div class="text_container">
@@ -187,6 +188,44 @@
 
         </div>
     </header>
+    <main>
+        <table id="notasTable">
+            <thead>
+                <tr>
+                    <th rowspan="2">Matérias</th>
+                    <th colspan="3">1º Bimestre</th>
+                    <th colspan="3">2º Bimestre</th>
+                    <th colspan="3">3º Bimestre</th>
+                    <th colspan="3">4º Bimestre</th>
+                    <th>faltas</th>
+                    <th>media final</th>
+                    
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                </tr>
+               
+            </thead>
+            <tbody>
+                <!-- Os dados serão preenchidos dinamicamente aqui -->
+            </tbody>
+        </table>
     
+        <button id="salvarNotas">Salvar Notas</button>
+    </main>
+    <script src="BoxSugestaoPesquisa.js"></script>
+    <script src="VerificaçaoDeAscesso.js"></script>
+<script src="SelectBarraRolagem.js"></script>
 </body>
 </html>
