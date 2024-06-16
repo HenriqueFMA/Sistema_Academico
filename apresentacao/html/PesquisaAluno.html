@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_pesquisaAluno.css">
     <link rel="stylesheet" href="Header.css">
-    <title>Document</title>
+    <title>PesquisaAluno</title>
+    <style>
+        .screen { display: none; }
+        .barra_de_pesquisa { position: relative; }
+        #suggestions { display: none; position: absolute; background: white; border: 1px solid #ccc; }
+        #suggestions li { cursor: pointer; padding: 5px; }
+        #suggestions li:hover { background: #eee; }
+    </style>
 </head>
 <body>
     <header id="diretor-header">
@@ -104,7 +111,7 @@
 
         </div>
     </header >
-    <header id="secretario-header" id="barra_de_rolagem">
+    <header id="secretario-header" >
         <div class="card_informacoes">
             <img src="imagens/Ellipse 2.svg" class="icon_User" alt="icon_User">
             <div class="text_container">
@@ -187,22 +194,36 @@
 
         </div>
     </header>
-        <main class="mainPesquisa">
-         
-            <div class="pesquisa">
-                <div class="barra_de_pesquisa">
-                    <input type="search" class="campoPesquisa" name="campoPesquisa" id="search" placeholder="Digite o CPF ou nome do aluno">
-                    <a class="btn_pesquisa">
-                        <img src="imagens/Icon_Lupa_Roxa.png" class="Icon_Lupa_Roxa" alt="icon_lupa">
-            
-                    </a>
-                    <ul id="suggestions" class="suggestions-list"></ul>
-                </div>
-                
-            
-            </main>
+    <main class="mainPesquisa">
+        <div class="pesquisa">
+            <div class="barra_de_pesquisa">
+                <input type="text" id="search" class="campoPesquisa" placeholder="Pesquise um aluno...">
+                <button class="btn_pesquisa">
+                    <img src="imagens/Icon_Lupa_Roxa.png" class="Icon_Lupa_Roxa" alt="icon_lupa">
+                </button>
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        </div>
         
-            
+        <div id="screen1" class="screen">
+            <h1>Informações do Aluno</h1>
+            <p id="studentName"></p>
+            <p id="studentCPF"></p>
+            <p id="studentClass"></p>
+            <p id="studentShift"></p>
+        </div>
+        
+        <!-- Adicione mais telas aqui -->
+        <div id="screen2" class="screen">
+            <h1>Tela 2</h1>
+            <!-- Conteúdo da Tela 2 -->
+        </div>
+        
+        <div id="screen3" class="screen">
+            <h1>Tela 3</h1>
+            <!-- Conteúdo da Tela 3 -->
+        </div>
+    </main>
             <script src="SelectBarraRolagem.js"></script>
             <script src="BoxSugestaoPesquisa.js"></script>
             <script src="VerificaçaoDeAscesso.js"></script>

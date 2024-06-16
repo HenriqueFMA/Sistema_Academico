@@ -83,3 +83,81 @@ img {
     margin: 0; /* Remove margem superior */
     font-size: 1.2em;
 }
+.calendario{
+    background: #f0f0f0;
+}
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+.calendar div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.calendar .header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+.calendar .highlight {
+    background-color: #0099ff;
+    color: white;
+    border-radius: 50%;
+}
+.events {
+    margin-left: 50px; 
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.events table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.events table, .events th, .events td {
+    border: 1px solid #ddd;
+}
+.events th, .events td {
+    padding: 8px;
+    text-align: left;
+}
+.month-name {   
+    color: #ddd;
+    grid-column: span 7;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    background: #373052;
+}
+.styled-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #cfe0e8;
+    font-size: 16px;
+}
+
+.styled-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3b3a4f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #2d2c3a;
+}
