@@ -5,10 +5,8 @@ Este documento visa apresentar a forma como o sistema acadêmico foi construído
 ## Índice
 
 - [Sobre](#sobre)
-- [Instalação](#instalação)
 - [Como Usar](#como-usar)
 - [Contribuição](#contribuição)
-- [Licença](#licença)
 - [Autores](#autores)
 - [Agradecimentos](#agradecimentos)
 
