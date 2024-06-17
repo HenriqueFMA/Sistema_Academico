@@ -5,61 +5,38 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class EventoFacade {
 
-    private List<EventoDTO> eventos = new ArrayList<>();
-    private long idCounter = 1;
+    private final List<EventoDTO> eventos = new ArrayList<>();
 
-    // Cria um novo evento
     public EventoDTO criar(EventoDTO eventoDTO) {
-        eventoDTO.setId(idCounter++);
+        eventoDTO.setId((long) (eventos.size() + 1));
         eventos.add(eventoDTO);
         return eventoDTO;
     }
 
-    // Atualiza um evento existente
-    public EventoDTO atualizar(EventoDTO eventoDTO, Long eventoId) {
-        Optional<EventoDTO> optionalEvento = eventos.stream()
-                .filter(e -> e.getId().equals(eventoId))
-                .findFirst();
-
-        if (optionalEvento.isPresent()) {
-            EventoDTO eventoExistente = optionalEvento.get();
-            eventoExistente.setData(eventoDTO.getData());
-            eventoExistente.setTitulo(eventoDTO.getTitulo());
-            return eventoExistente;
-        } else {
-            return null; // Evento não encontrado
+    public EventoDTO atualizar(EventoDTO eventoDTO, Long id) {
+        for (EventoDTO evento : eventos) {
+            if (evento.getId().equals(id)) {
+                evento.setTitulo(eventoDTO.getTitulo());
+                evento.setData(eventoDTO.getData());
+                return evento;
+            }
         }
+        return null;
     }
 
-    // Retorna todos os eventos
     public List<EventoDTO> getAll() {
         return new ArrayList<>(eventos);
     }
 
-    // Busca um evento pelo ID
-    public EventoDTO getById(Long eventoId) {
-        return eventos.stream()
-                .filter(e -> e.getId().equals(eventoId))
-                .findFirst()
-                .orElse(null);
+    public EventoDTO getById(Long id) {
+        return eventos.stream().filter(e -> e.getId().equals(id)).findFirst().orElse(null);
     }
 
-    // Deleta um evento pelo ID
-    public String delete(Long eventoId) {
-        Optional<EventoDTO> optionalEvento = eventos.stream()
-                .filter(e -> e.getId().equals(eventoId))
-                .findFirst();
-
-        if (optionalEvento.isPresent()) {
-            eventos.remove(optionalEvento.get());
-            return "Evento deletado com sucesso";
-        } else {
-            return "Evento não encontrado";
-        }
+    public void delete(Long id) {
+        eventos.removeIf(e -> e.getId().equals(id));
     }
 }
