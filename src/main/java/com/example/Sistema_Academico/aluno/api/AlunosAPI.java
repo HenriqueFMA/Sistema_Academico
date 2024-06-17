@@ -26,7 +26,7 @@ public class AlunosAPI {
 
     @Autowired
     private AlunoFacade alunosFacade;
-
+    
     // Criar um novo aluno
     @PostMapping
     @ResponseBody
